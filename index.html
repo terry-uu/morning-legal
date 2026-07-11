@@ -126,11 +126,23 @@
     footer a { color: inherit; }
 
     @media (max-width: 860px) {
+      .phones {
+        margin-inline: -1.5rem;
+      }
       .phones-track {
-        grid-template-columns: 1fr;
-        max-width: 280px;
-        margin: 0 auto;
-        gap: 1.75rem;
+        display: flex;
+        gap: 1rem;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior-x: contain;
+        padding: 0.25rem 1.5rem 1rem;
+        scrollbar-width: none;
+      }
+      .phones-track::-webkit-scrollbar { display: none; }
+      .phone {
+        flex: 0 0 min(72vw, 280px);
+        scroll-snap-align: center;
       }
     }
   </style>
