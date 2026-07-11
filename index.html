@@ -3,25 +3,38 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>morning · 아침인사회 — 법적 고지</title>
+  <meta name="description" content="매일 아침, 누군가의 애정어린 인사 한 통을 주고받는 아침인사회입니다." />
+  <title>아침인사회 · morning</title>
   <style>
-    :root { color-scheme: light; }
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
     body { font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
-      max-width: 40rem; margin: 3rem auto; padding: 0 1.25rem; line-height: 1.65; color: #111; }
-    h1 { font-size: 1.4rem; font-weight: 700; margin-bottom: 0.25rem; }
-    p.sub { color: #555; margin-top: 0; }
-    ul { padding-left: 1.2rem; }
-    a { color: #0b57d0; }
-    footer { margin-top: 3rem; font-size: 0.85rem; color: #666; }
+      max-width: 42rem; min-height: 100vh; margin: 0 auto; padding: 18vh 1.5rem 3rem;
+      line-height: 1.75; color: #f4f2eb; background: #090b0d; }
+    h1 { margin: 0; font-size: clamp(2.4rem, 9vw, 4.5rem); line-height: 1.08; letter-spacing: -0.06em; }
+    .brand { color: #9fd356; font-size: 0.9rem; letter-spacing: 0.12em; text-transform: uppercase; }
+    .intro { margin: 2.5rem 0 0; font-size: 1.12rem; color: #c6c9c1; word-break: keep-all; }
+    nav { display: flex; flex-wrap: wrap; gap: 1rem 1.5rem; margin-top: 3rem; padding-top: 1.5rem;
+      border-top: 1px solid rgba(255,255,255,0.14); }
+    a { color: #f4f2eb; text-underline-offset: 0.3em; }
+    footer { margin-top: 5rem; font-size: 0.82rem; color: #858b82; }
   </style>
 </head>
 <body>
-  <h1>morning · 아침인사회</h1>
-  <p class="sub">운영: 비로소</p>
-  <ul>
-    <li><a href="privacy.html">개인정보처리방침</a></li>
-    <li><a href="terms.html">이용약관</a></li>
-  </ul>
+  <main>
+    <p class="brand">morning</p>
+    <h1>아침을<br />애정어린 마음으로.</h1>
+    <p class="intro">
+      매일 아침, 눈을 뜨면 누군가의 애정어린 인사 한 통을 받습니다.<br />
+      그리고 아직 깨어나지 않은 또 다른 누군가에게 한 통을 건넵니다.<br />
+      한 사람, 한 마음, 한 아침을 위한 아침인사회입니다.
+    </p>
+    <nav aria-label="서비스 안내">
+      <a href="privacy.html">개인정보처리방침</a>
+      <a href="terms.html">이용약관</a>
+      <a href="mailto:terry.youu@gmail.com">문의하기</a>
+    </nav>
+  </main>
   <footer>
     비로소 · 대표 유태형 · 사업자등록번호 610-29-65664<br />
     서울특별시 성동구 뚝섬로 413-1 · terry.youu@gmail.com
